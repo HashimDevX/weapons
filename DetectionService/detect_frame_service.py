@@ -34,7 +34,7 @@ s3_client = boto3.client(
     aws_secret_access_key=os.getenv("AWS_SECRET_ACCESS_KEY"),
     region_name=os.getenv("AWS_REGION", "us-east-1")
 )
-S3_BUCKET = os.getenv("S3_BUCKET", "your-s3-bucket-name")
+S3_BUCKET = os.getenv("S3_BUCKET", "weapon-detection-screenshots")
 EXPRESS_URL = os.getenv("EXPRESS_URL", "http://localhost:3001/api/detection")
 
 @app.post('/detect-frame')
